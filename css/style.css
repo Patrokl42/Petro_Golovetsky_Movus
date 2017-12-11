@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.icon{
+    background-image: url("../images/sprite.png");
+    background-position: -14px -5px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin: 13px;
+}
+
+.icon-dialog{
+    background-position: -67px -66px;
+}
+
+.icon-time{
+    background-position: -60px -5px;
+}
+
+.icon-chear{
+    background-position: -14px -65px;
+}
+
+.icon-boulp{
+    background-position: -114px -10px;
+}
+
+.icon-calendar{
+    background-position: -170px -9px;
+}
+
+.icon-people{
+    background-position: -120px -66px;
+}
+
+.icon-board{
+    background-position: -199px -66px;
+}
+
+.icon-tie{
+    background-position: -166px -66px;
+}
+
+.icon-people,.icon-board,.icon-tie{
+    display: block;
+    margin: 0px 23px 0px 0px;
+}
+
+body{
+    font-family: Arial;
+}
+
+img{
+    max-width: 100%;
+}
+
+.page-wrapper{
+    width: 100%;
+    /*border-top: #3f4e86 solid 3px;*/
+}
+
+.wrapper{
+    max-width: 940px;
+    margin: auto;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contacts{
+    max-width: 940px;
+    background-color: #3f4e86;
+    margin: auto;
+    padding: 12px 12px 12px 16px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.phone_number a{
+    color: #a4cdf8;
+    text-decoration: none;
+}
+
+.our_contacts a{
+    color: #a4cdf8;
+}
+
+.logo{
+    background-color: #ededed;
+    margin: auto;
+    padding: 6px 0px 6px 0px;
+}
+
+.advantages{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 19px 0px;
+    color: white;
+}
+
+.advantages__element{
+    background: url("../images/1 header.png") no-repeat ;
+    margin: auto;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 11px;
+}
+
+.advantages .advantages__element:nth-child(3){
+    background: url("../images/2 header.png") no-repeat;
+    background-size: cover;
+}
+
+.advantages .advantages__element:nth-child(4){
+    background: url("../images/3 header.png") no-repeat;
+    background-size: cover;
+}
+
+.navigation{
+    margin: auto;
+    text-align: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation > ul{
+    list-style-type: none;
+}
+
+.navigation > ul li{
+    padding: 12px 0px 10px 13px;
+    background-color: #e4e5e9;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.navigation > ul:nth-child(2) li{
+    background-color: #dae0f7;
+}
+
+.navigation li ul{
+    list-style-type: none;
+    background-color: #dae0f7;
+}
+
+.navigation li ul li{
+    background-color: #dae0f7;
+    border-bottom: none;
+}
+
+.navigation li ul li ::before{
+    content: '\25CF';
+    color: #3f4e86;
+    padding: 0px 13px 0px 0px;
+}
+
+.navigation .sub__menu{
+    padding: 0px;
+}
+
+.navigation .active__item{
+    background-color: #3f4e86;
+    color: white;
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.navigation .active__item::before{
+    content: ' ';
+}
+
+.title{
+    color:#3f4e86;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.text p:nth-child(2){
+    color: #3f4e86;
+}
+
+.title__work{
+    color: black;
+    font-size: 21px;
+}
+
+.row{
+    margin: auto;
+}
+
+.col{
+    margin: 0px 0px 20px 0px;
+}
+
+.strive{
+    color: white;
+}
+
+.strive-col{
+    background-color: #3f4e86;
+    text-align: center;
+    margin: auto;
+    padding: 16px 5px 10px 5px;
+}
+
+.copyright{
+    border-top: solid 1px #8a8a8a;
+    background-color: white;
+    color: #777777;
+}
+
+.copyright a{
+    color: #777777;
+}
+
+@media screen and (min-width: 681px) {
+    .to-left{
+        float: left;
+    }
+
+    .to-right{
+        float: right;
+    }
+
+    .page-wrapper{
+        border-top: solid 3px #3f4e86;
+    }
+
+    .contacts{
+        margin-top: 22px;
+    }
+
+    .logo{
+        width: 25%;
+
+    }
+
+    .advantages__element{
+        width: 25%;
+        max-height: 57px;
+    }
+
+    .logo,.advantages__element{
+        margin: 0;
+        float: left;
+    }
+
+    .navigation{
+        max-width: 220px;
+        margin: 72px 0 0 0;
+        text-align: left;
+    }
+
+    .content-wrapper{
+        max-width: 700px;
+        text-align: left;
+    }
+
+    .title{
+        text-align: left;
+    }
+
+}
